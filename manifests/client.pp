@@ -1,4 +1,4 @@
-class ssh::client inherits ssh::params {
+class ssh::client($servers = []) inherits ssh::params {
   package { 'openssh-client':
     name => $client_package_name,
     ensure => present,
