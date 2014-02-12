@@ -59,8 +59,9 @@ PasswordAuthentication <%= password_authentication %>
 #GSSAPIAuthentication no
 #GSSAPICleanupCredentials yes
 
-X11Forwarding no
-PrintMotd <%= print_motd %>
+X11Forwarding <%= @x11forwarding %>
+X11DisplayOffset 10
+PrintMotd <%= @print_motd %>
 PrintLastLog yes
 TCPKeepAlive yes
 #UseLogin no

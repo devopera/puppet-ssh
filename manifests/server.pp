@@ -3,6 +3,7 @@ class ssh::server(
   $allowed_users=[],
   $password_authentication='no',
   $print_motd='no',
+  $x11forwarding='no',
 ) inherits ssh::params {
   package { 'openssh-server':
     ensure => present,
